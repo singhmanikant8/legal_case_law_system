@@ -1,0 +1,161 @@
+/* Make sure container covers full viewport height */
+.home-container {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 2rem 1.5rem;
+  background-color: azure; /* very light gray */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: goldenrod;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: aliceblue;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.home-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-para {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 620px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #bdb76b; /* soft blue */
+}
+
+/* Buttons container */
+.btn {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn-signup,
+.btn_login {
+  padding: 0.75rem 2.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.btn-signup {
+  background-color: #61a0ff;
+  color: white;
+}
+
+.btn-signup:hover {
+  background-color: #4c89e6;
+}
+
+.btn_login {
+  background-color: transparent;
+  color: #61a0ff;
+  border: 2px solid #61a0ff;
+}
+
+.btn_login:hover {
+  background-color: #61a0ff;
+  color: white;
+}
+
+/* Feature Section */
+.feature-section {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.feature-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.8rem;
+}
+
+.feature-card {
+  background-color: #f4f9ff;
+  padding: 1.5rem 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(97, 160, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.steps-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 1.2rem;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.steps-list li {
+  margin-bottom: 1.1rem;
+}
+
+.steps-list strong {
+  color: #2c3e50;
+}
