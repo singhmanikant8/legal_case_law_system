@@ -1,4 +1,5 @@
-import "./homePage.css"
+import "./homePage.css";
+import {Link} from "react-router-dom";
 function Homepage(){
     return (
     <div className ="home-container">
@@ -11,7 +12,9 @@ function Homepage(){
         </p>
 
         <div className="btn">
-          <button className="btn-signup">Signup</button>
+          <Link to="/signup">
+            <button className="btn-signup">Signup</button>
+          </Link>
           <button className="btn_login">Login</button>
         </div>
       </section>
