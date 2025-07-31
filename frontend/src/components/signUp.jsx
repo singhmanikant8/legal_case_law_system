@@ -12,7 +12,7 @@ function Signup(){
     const handleChange = (e) =>{
         updateData({
             ...formData,
-            [e.target.name] : [e.target.value]
+            [e.target.name] : e.target.value
         });
     };
     //handle the form submission
@@ -29,6 +29,10 @@ function Signup(){
             setError("Passwords are not matching!");
             return;
         }
+        if(password.length < 6){
+            setError("Password should be atleast 6 characters!");
+            return;
+        }
 
         setError("");
         setSuccess("User signed up successfully!");
@@ -38,6 +42,7 @@ function Signup(){
         <div className="section">
             <div className="signup-container">
                 <h2 className="heading">Create Account</h2>
+                <p className="para">(Password must be atleast 6 characters!)</p>
 
                 <form onSubmit={handleSubmit} className="form-cls">
                     <input

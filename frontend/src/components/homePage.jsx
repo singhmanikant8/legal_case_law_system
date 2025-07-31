@@ -15,7 +15,9 @@ function Homepage(){
           <Link to="/signup">
             <button className="btn-signup">Signup</button>
           </Link>
-          <button className="btn_login">Login</button>
+          <Link to="/login">
+            <button className="btn_login">Login</button>
+          </Link>
         </div>
       </section>
 
