@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { BrowserRouter, Routes, Route ,Link} from 'react-router-dom';
 import "./loginPage.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = ()=>{
     const[formData,setData] = useState({
@@ -9,6 +10,7 @@ const Login = ()=>{
 
     const[error,setError] = useState("");
     const[success,setSuccess] = useState("");
+     const navigate = useNavigate();
 
     const handleChange = (e)=>{
         setData({
@@ -32,6 +34,8 @@ const Login = ()=>{
         //dummy success flow, will update after connecting frontend with backend
         setSuccess("Login Successfully!");
         setError("");
+       
+        navigate("/description");
     };
 
     return (

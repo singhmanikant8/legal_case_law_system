@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./signUp.css";
+import { useNavigate } from "react-router-dom";
 
 function Signup(){
     const [formData,updateData] = useState(
@@ -8,6 +9,7 @@ function Signup(){
 
     const [error,setError] = useState("");//for checking any error in inputted data
     const [success,setSuccess] = useState("");//if no error found
+    const navigate = useNavigate();
 
     const handleChange = (e) =>{
         updateData({
@@ -36,6 +38,8 @@ function Signup(){
 
         setError("");
         setSuccess("User signed up successfully!");
+        
+        navigate("/login");
     };
 
     return (
